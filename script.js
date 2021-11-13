@@ -4,10 +4,19 @@ const lista = document.querySelector('ul')
 let arrayTarefas = []
 
 function addItem(){
-    lista.appendChild(criaLi(inputTarefa.value, false))
+    if(verificaString(inputTarefa.value))
+        lista.appendChild(criaLi(inputTarefa.value, false))
     inputTarefa.value = ''
     salva()
-  }
+}
+
+function verificaString(txt){
+    if(txt.length > 50 && !txt.includes(' ')){
+        alert('Digite uma Tarefa Válida')
+        return false
+    }   
+    return true
+}
 
 function riscaItem(e){
     let p  = e.parentElement.querySelector('p')
@@ -47,8 +56,6 @@ window.onload = function(){
     JSON.parse(localStorage.getItem('listaTarefas2')).forEach(e => {
         lista.appendChild(criaLi(e.texto, e.riscado))
     });
- 
- 
 }
 
 function criaLi(texto, checked){

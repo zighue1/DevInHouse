@@ -1,22 +1,31 @@
-
-
 body {
     min-height: 100vh;
     position: relative;
     box-sizing: border-box;
-    background-color: #fcf6d2;
-    /* Verdana no corpo inteiro ;) */
-    font-family: Verdana, sans-serif;
+    background-color: #f1e391;
 }
 
-
-
 main {
-    width: 400px;
+    width: 450px;
     margin: auto;
-    
     padding-top: 10px;
-    
+}
+
+button{
+    background-color: rgb(103, 141, 51);
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+button:hover{
+    transition: background-color 2s;
+    background-color: rgb(120, 190, 15);
 }
 
 p.riscado{
@@ -27,6 +36,7 @@ p{
     padding-left: 10px;
     padding-right: 10px;
     text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     flex: 1;
 }
 
@@ -34,18 +44,24 @@ p{
     display: flex;
     flex-direction: row;
     align-items: center;
-    
     border: solid green 2px;
     border-radius: 10px;
     padding: 5px;
     margin: 5px;
-
+    transition: background-color 5s  ;
     background-color: rgb(220, 243, 186);
 }
+
+.lContainer:hover{
+    transition: background-color 2s  ;
+    background-color: rgb(161, 180, 135)
+}
+
 ul{
     width: 60%;
     margin: auto;
 }
+
 h1 {
     padding: 20px;
     text-align: center;
@@ -53,16 +69,20 @@ h1 {
 }
 
 input#inputTarefa {
-   
     width: 300px;
-    
 }
+
+li > button:hover{
+    transition: background-color 5s;
+    background-color: rgb(47, 65, 21);
+}
+
 li > button {
-    
+    background-color: rgb(120, 190, 15); 
     flex: 0;
 }
+
 li > input {
-    
     flex: 0;
 }
   
