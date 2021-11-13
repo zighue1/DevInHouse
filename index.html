@@ -7,13 +7,20 @@
     <title>Lista de Afazeres</title>
     <script src="./script.js" defer></script>
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <h1>Lista de Afazeres</h1>
-    <input type="text" id="inputTarefa" placeholder="Digite uma tarefa...">
-    <button id="btn-add" onclick="addItem()">Adicionar</button>
-    <ul>
-        
+    <header>
+        <h1>Lista de Afazeres</h1>
+    </header>
+    <hr/>
+    <main>
+        <label for="inputTarefa">
+            <input type="text" id="inputTarefa" placeholder="Digite uma tarefa...">
+            <button id="btn-add" onclick="addItem()">Adicionar</button>
+        </label>
+    </main>
+    <ul>    
     </ul>
 </body>
 </html>
